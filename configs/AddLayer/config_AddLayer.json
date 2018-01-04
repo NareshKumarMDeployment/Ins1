@@ -1,0 +1,59 @@
+{
+  "layers": [
+    {
+      "type": "Feature",
+      "url": "https://coast.noaa.gov/arcgis/rest/services/MarineCadastre/PhysicalOceanographicAndMarineHabitat/MapServer/3",
+      "name": "Noaa Radar Station in USA",
+      "opacity": 0.6,
+      "visible": true,
+      "showLabels": true,
+      "autorefresh": 0,
+      "mode": "ondemand"
+    },
+    {
+      "type": "Dynamic",
+      "name": "USA Drought Map",
+      "url": "https://earthobs1.arcgis.com/arcgis/rest/services/US_Drought_Current/MapServer",
+      "opacity": 0.6,
+      "visible": true,
+      "imageformat": "png8",
+      "imagedpi": 96,
+      "disableclientcaching": false,
+      "hidelayers": "",
+      "visiblelayers": "0"
+    },
+    {
+      "type": "Dynamic",
+      "name": "USA Weather Warning Map",
+      "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/wwa_meteoceanhydro_longduration_hazards_time/MapServer",
+      "opacity": 0.6,
+      "visible": true,
+      "imageformat": "png8",
+      "imagedpi": 96,
+      "disableclientcaching": false,
+      "hidelayers": "3,6,10,13,17,20,24,27,30,33,36,39,42",
+      "visiblelayers": "2,5,9,12,16,19,23,26,29,32,35,38,41"
+    },
+    {
+      "type": "Tiled",
+      "name": "USA Spring Tornado warning map",
+      "url": "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/Spring_Tornado_Warnings/MapServer",
+      "opacity": 0.6,
+      "displayLevels": null,
+      "autorefresh": 0,
+      "visible": true
+    },
+    {
+      "type": "Dynamic",
+      "name": "Poplation Density",
+      "url": "https://demographics6.arcgis.com/arcgis/rest/services/USA_Demographics_and_Boundaries_2016/MapServer",
+      "opacity": 0.6,
+      "visible": true,
+      "imageformat": "png8",
+      "imagedpi": 96,
+      "disableclientcaching": false,
+      "hidelayers": "3,4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41",
+      "visiblelayers": "0,1,2,5,9,21,42,43,44,45,46,47,48,49"
+    }
+  ]
+}
